@@ -1,6 +1,3 @@
-// Should be distributed as a bower package and included in the host
-// to be available for all components
-
 (function() {
 	
 	var api = {
@@ -11,7 +8,7 @@
 		listenFor: listenFor,
 		component: getClientApi,
 	};
-	window.uiComposition = api;
+	window.uicomposition = api;
 	
 	var components = Array();
 	var subscriptions = Array();
@@ -32,7 +29,8 @@
 	}
 	
 	function activateServiceComponent(serviceComponent, args) {
-		components[serviceComponent].onactivate(args);
+		if (components && components[serviceComponent] && components[serviceComponent].onactivate)
+			components[serviceComponent].onactivate(args);
 	}
 	
 	function listenFor(serviceComponent, eventName, eventHandler) {
