@@ -1,0 +1,26 @@
+{
+  "name": "uicomposition",
+  "main": "uicomposition.js",
+  "authors": [
+    "Sami Lamti <sami.lamti@gmail.com>"
+  ],
+  "description": "Enables you to compose multiple Autonomous Services together through their UIs, regardless of choosen web stack",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "uicomposition",
+    "autonomous",
+    "micro",
+    "services"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.uicomposition.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
