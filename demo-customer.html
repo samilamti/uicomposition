@@ -1,0 +1,40 @@
+<head>
+  <title>demo-customer</title>
+</head>
+
+<body>
+  <h1>Find person</h1>
+
+  {{> findPerson}}
+</body>
+
+<template name="findPerson">
+  
+  <input type="search" id="search" placeholder="Search by year of birth ..."/>
+  <button>Search</button>
+
+  <div id="searchResults">
+    <table>
+      {{#each persons}}
+      <tr>
+         <td>
+          <a href="#" class="person" data-id="{{_id}}"> {{firstName}} {{lastName}} </a>
+         </td>
+         <td>
+           <b>{{born.year}}</b>
+         </td>
+         <td>
+          {{location}}
+         </td>
+      </tr>
+      {{/each}}
+    </table>
+  </div>
+</template>
+
+<template name="personDetails">
+  <p> {{firstName}} {{lastName}} </p>
+  <p> Born during {{born.year}} in {{location}} </p>
+  
+  <button class="accept">OK</button>
+</template>
