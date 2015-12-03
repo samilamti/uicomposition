@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <base href="http://localhost:51372/index.html"/>
+</head>
+<body ng-app="app">
+
+    <h1> Select billing address </h1>
+    <div ng-controller="billingAddress as viewModel">
+        <input id="radio-reg" type="radio" name="address" value="{{viewModel.address}}" ng-model="viewModel.selectedAddress"/>
+        <label for="radio-reg">Use the customer's registered address</label>
+        <br />
+        <input id="radio-new" type="radio" name="address" value="{{viewModel.newBillingAddress}}" ng-model="viewModel.selectedAddress" />
+        <label for="radio-new">
+            Select another billing address
+        </label>
+        <button ng-disabled="viewModel.selectedAddress !== viewModel.newBillingAddress" ng-click="viewModel.selectAnotherBillingAddress()">Go...</button>
+        <hr />
+        <div style="background-color: lightgray">
+            [
+            <span>Policy Id: <span ng-bind="viewModel.policyId"></span></span> |
+            <span>Address Id: <span ng-bind="viewModel.address"></span></span> |
+            <span>Selected Address Id: <span ng-bind="viewModel.selectedAddress"></span></span>
+            ]
+        </div>
+        <div>
+            <button ng-click="viewModel.accept()"></button>
+        </div>
+    </div>
+
+
+
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="App/app.js"></script>
+</body>
+</html>
