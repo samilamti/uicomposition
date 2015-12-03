@@ -15,7 +15,7 @@
     "services"
   ],
   "license": "MIT",
-  "homepage": "http://www.uicomposition.com",
+  "homepage": "https://github.com/samilamti/uicomposition/wiki",
   "ignore": [
     "**/.*",
     "node_modules",
