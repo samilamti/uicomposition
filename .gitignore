@@ -1,3 +1,5 @@
 .bowerrc
+.suo
 bin
 obj
+debug
