@@ -41,7 +41,7 @@
 	// })();
 	
 (function() {
-	var self = window.uiComposition.component('person/find-person');
+	var self = window.uicomposition.component('person/find-person');
 	self.attachEventHandler(function() {
 		var childWindow = window.open('http://localhost:3000/', 'childWindow', 'width=500, height=300, top=' + (event.screenY-100) + ', left=' + (event.screenX-70));
 		window.addEventListener('message', function(event) {
