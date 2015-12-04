@@ -1,6 +1,8 @@
 .bowerrc
 .suo
+.csproj.user
 bin
 obj
 debug
 packages
+bower_components
