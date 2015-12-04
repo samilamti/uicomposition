@@ -26,7 +26,11 @@
                 var result = 
                     viewModel.selectedAddress === viewModel.address ? (viewModel.legalEntityType === 'person' ? 'Registered Address' : 'Primary Address') :
                         'New billing address with Id "F066A2D5-409B-4A96-B614-70D82CB98679"';
-                window.opener.postMessage(['accept', {presentation: result}], '*');
+                if (window.opener && window.opener.postMessage)
+                    window.opener.postMessage(['accept', { presentation: result }], '*');
+                else {
+                    console.log('Done: ' + result);
+                }
             };
             viewModel.selectAnotherBillingAddress = function () { alert('here is where the demo ends'); };
         }]);
