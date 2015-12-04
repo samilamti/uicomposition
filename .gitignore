@@ -1,6 +1,6 @@
 .bowerrc
 .suo
-.csproj.user
+**/*.csproj.user
 .user
 bin
 obj
