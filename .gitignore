@@ -1,6 +1,7 @@
 .bowerrc
 .suo
 .csproj.user
+.user
 bin
 obj
 debug
