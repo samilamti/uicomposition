@@ -17,8 +17,15 @@
         </label>
         <button ng-disabled="viewModel.selectedAddress !== viewModel.newBillingAddress" ng-click="viewModel.selectAnotherBillingAddress()">Go...</button>
         <hr />
+        <div style="background-color: lightgray">
+            [
+            <span>Policy Id: <span ng-bind="viewModel.policyId"></span></span> |
+            <span>Address Id: <span ng-bind="viewModel.address"></span></span> |
+            <span>Selected Address Id: <span ng-bind="viewModel.selectedAddress"></span></span>
+            ]
+        </div>
         <div>
-            <button ng-click="viewModel.accept()">OK</button>
+            <button ng-click="viewModel.accept()"></button>
         </div>
     </div>
 
