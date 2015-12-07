@@ -2,13 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-    <base href="http://localhost:51372/index.html"/>
+    <base href="http://localhost:51372/index.html" />
+    <style type="text/css">
+        body {
+            font-family: Times New Roman, Helvetica, Serif;
+        }
+
+        button {
+            background-color: #DD1B16;
+            color: #F2F2F2;
+            border-color: #B3B3B3;
+            border-width: 2px;
+            padding: 2px 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body ng-app="app">
 
     <h1> Select billing address </h1>
     <div ng-controller="billingAddress as viewModel">
-        <input id="radio-reg" type="radio" name="address" value="{{viewModel.address}}" ng-model="viewModel.selectedAddress"/>
+        <img src="AngularJS-large.png" style="text-align: right; float: right" alt="Angular JS Logo" />
+        <input id="radio-reg" type="radio" name="address" value="{{viewModel.address}}" ng-model="viewModel.selectedAddress" />
         <label for="radio-reg">Use the customer's registered address</label>
         <br />
         <input id="radio-new" type="radio" name="address" value="{{viewModel.newBillingAddress}}" ng-model="viewModel.selectedAddress" />

@@ -75,6 +75,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AngularJS-large.png" />
     <Content Include="App\app.js" />
     <Content Include="billingAddress.js" />
     <Content Include="Global.asax" />
