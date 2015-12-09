@@ -2,7 +2,7 @@
 This repository contains the `uicomposition.js` library and projects to demonstrate its intended use.
 
 # Why UI Composition (and what is it)?
-Please see the [wiki](https://github.com/samilamti/uicomposition/wiki).
+Please see the [wiki](https://github.com/samilamti/uicomposition/wiki) and/or [this blog post](http://devxp.blogspot.com/2015/12/using-ui-composition-as-integration.html)
 
 To run the demo, start the projects in the order listed below.
 
